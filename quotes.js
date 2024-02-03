@@ -1,12 +1,3 @@
-// function getRandomIndex(max) {
-//   return Math.floor(Math.random() * max);
-// }
-
-// const tabLength = TabQuotes.length;
-// const randomIndex = getRandomIndex(tabLength);
-// const randomQuote = TabQuotes[randomIndex].quotes;
-// console.log(randomQuote);
-
 const quotes = [
   {
     quote:
@@ -48,26 +39,35 @@ const containers = [
 
 const buttons = document.querySelector(".mybtn");
 
-// CONTAINER 2
-buttons.addEventListener("click", handleClick);
-function handleClick() {
-  container2.classList.toggle("active");
-}
-// CONTAINER 3
-buttons.addEventListener("click", handleClick2);
-function handleClick2() {
-  container3.classList.toggle("active");
-}
-// container 4
-buttons.addEventListener("click", handleClick3);
-function handleClick3() {
-  container4.classList.toggle("active");
-}
-// container 5
-buttons.addEventListener("click", handleClick4);
-function handleClick4() {
-  container5.classList.toggle("active");
-}
+// function getRandomIndex(max) {
+//   return Math.floor(Math.random() * max);
+// }
+
+// const tabLength = containers.length;
+// const randomIndex = getRandomIndex(containers);
+// const randomQuote = containers[randomIndex].quotes;
+// console.log(randomQuote);
+
+// // CONTAINER 2
+// buttons.addEventListener("click", handleClick);
+// function handleClick() {
+//   container2.classList.toggle("active");
+// }
+// // CONTAINER 3
+// buttons.addEventListener("click", handleClick2);
+// function handleClick2() {
+//   container3.classList.toggle("active");
+// }
+// // container 4
+// buttons.addEventListener("click", handleClick3);
+// function handleClick3() {
+//   container4.classList.toggle("active");
+// }
+// // container 5
+// buttons.addEventListener("click", handleClick4);
+// function handleClick4() {
+//   container5.classList.toggle("active");
+// }
 
 // let activeContainerIndex = 0;
 
