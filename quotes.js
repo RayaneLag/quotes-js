@@ -29,15 +29,43 @@ const container2 = document.querySelector(".container2");
 const container3 = document.querySelector(".container3");
 const container4 = document.querySelector(".container4");
 const container5 = document.querySelector(".container5");
+const container6 = document.querySelector(".container6");
+const container7 = document.querySelector(".container7");
 const containers = [
   document.querySelector(".container"),
   document.querySelector(".container2"),
   document.querySelector(".container3"),
   document.querySelector(".container4"),
   document.querySelector(".container5"),
+  document.querySelector(".container6"),
+  document.querySelector(".container7"),
 ];
 
-const buttons = document.querySelector(".mybtn");
+const buttons = document.querySelectorAll(".mybtn");
+
+let activeContainerIndex = 0;
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log(activeContainerIndex);
+    if (activeContainerIndex === 0) {
+      containers[0].style.display = "none";
+    }
+    containers[activeContainerIndex].classList.remove("active");
+
+    containers[activeContainerIndex].style.zIndex = "1";
+    activeContainerIndex = (activeContainerIndex + 1) % containers.length;
+    containers[activeContainerIndex].classList.add("active");
+    containers[activeContainerIndex].style.zIndex = "10";
+  });
+});
+
+
+
+
+
+
+
 
 // function getRandomIndex(max) {
 //   return Math.floor(Math.random() * max);
@@ -47,34 +75,3 @@ const buttons = document.querySelector(".mybtn");
 // const randomIndex = getRandomIndex(containers);
 // const randomQuote = containers[randomIndex].quotes;
 // console.log(randomQuote);
-
-// // CONTAINER 2
-// buttons.addEventListener("click", handleClick);
-// function handleClick() {
-//   container2.classList.toggle("active");
-// }
-// // CONTAINER 3
-// buttons.addEventListener("click", handleClick2);
-// function handleClick2() {
-//   container3.classList.toggle("active");
-// }
-// // container 4
-// buttons.addEventListener("click", handleClick3);
-// function handleClick3() {
-//   container4.classList.toggle("active");
-// }
-// // container 5
-// buttons.addEventListener("click", handleClick4);
-// function handleClick4() {
-//   container5.classList.toggle("active");
-// }
-
-let activeContainerIndex = 0;
-
-buttons.addEventListener("click", () => {
-  containers[activeContainerIndex].classList.remove("active");
-  containers[activeContainerIndex].style.zIndex = "1";
-  activeContainerIndex = (activeContainerIndex + 1) % containers.length;
-  containers[activeContainerIndex].classList.add("active");
-  containers[activeContainerIndex].style.zIndex = "10";
-});

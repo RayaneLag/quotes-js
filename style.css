@@ -136,6 +136,37 @@
   box-shadow: 5px 5px 14px 5px rgba(0, 0, 0, 0.71);
 }
 
+.container6 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://wallpaperwaifu.com/wp-content/uploads/2020/11/spider-man-miles-morales-thumb.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.container6 .quotes p {
+  color: white;
+}
+.container7 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://wallpapers.com/images/hd/cool-hd-logo-in-game-of-thrones-qhdelrxg3d2ftb1a.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container7 .quotes p {
+  color: white;
+}
+.container7 .quotes button {
+  position: absolute;
+  bottom: 10px;
+}
+
 .container.active {
   display: flex;
 }
@@ -149,5 +180,11 @@
   display: flex;
 }
 .container5.active {
+  display: flex;
+}
+.container6.active {
+  display: flex;
+}
+.container7.active {
   display: flex;
 }
