@@ -69,12 +69,12 @@ const buttons = document.querySelector(".mybtn");
 //   container5.classList.toggle("active");
 // }
 
-// let activeContainerIndex = 0;
+let activeContainerIndex = 0;
 
-// buttons.addEventListener("click", () => {
-//   containers[activeContainerIndex].classList.remove("active");
-//   containers[activeContainerIndex].style.zIndex = "1";
-//   activeContainerIndex = (activeContainerIndex + 1) % containers.length;
-//   containers[activeContainerIndex].classList.add("active");
-//   containers[activeContainerIndex].style.zIndex = "10";
-// });
+buttons.addEventListener("click", () => {
+  containers[activeContainerIndex].classList.remove("active");
+  containers[activeContainerIndex].style.zIndex = "1";
+  activeContainerIndex = (activeContainerIndex + 1) % containers.length;
+  containers[activeContainerIndex].classList.add("active");
+  containers[activeContainerIndex].style.zIndex = "10";
+});
