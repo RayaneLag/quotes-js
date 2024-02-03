@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1673694310203-YOY1RPTWN8Z3N2Q4Q99O/coveer.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/888/693/212/vinland-saga-landscape-dawn-sky-clouds-hd-wallpaper-preview.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container3 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images4.alphacoders.com/606/thumb-1920-606265.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container3 p {
+  color: #000000;
+}
+.container3 .quotes button {
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+}
+
+.container4 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/1011/728/884/death-note-ryuk-moon-wallpaper-preview.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container4 .quotes button {
+  background-color: #0b0b0d;
+  background-image: linear-gradient(
+    43deg,
+    #0b0b0d 0%,
+    #050506 46%,
+    #f5f5f5 100%
+  );
+}
+
+.container5 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/873/181/262/uchiha-obito-naruto-anime-night-stars-mask-hd-wallpaper-preview.jpg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container5 .quotes button {
+  background-color: #590000;
+  background-image: linear-gradient(
+    180deg,
+    #590000 0%,
+    #a70000 50%,
+    #ff0000 100%
+  );
+}
+
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  height: 50%;
+  width: 50%;
+  border-radius: 25px;
+  font-size: xx-large;
+  color: white;
+  position: relative;
+  padding: 50px;
+  -webkit-box-shadow: 5px 5px 13px 8px #000000;
+  box-shadow: 5px 5px 13px 8px #000000;
+  text-align: center;
+}
+
+.quotes button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  position: absolute;
+  bottom: 60px;
+  box-shadow: 5px 5px 14px 5px rgba(0, 0, 0, 0.71);
+}
+
+.container.active {
+  display: flex;
+}
+.container2.active {
+  display: flex;
+}
+.container3.active {
+  display: flex;
+}
+.container4.active {
+  display: flex;
+}
+.container5.active {
+  display: flex;
+}
